@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>💌</title>
+  <style>
+    body {
+      background-color: #fff0f3;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      padding-top: 100px;
+      color: #5a4a42;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    #yes {
+      background-color: #b76e79;
+      color: white;
+    }
+    #no {
+      background-color: #ddd;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="alwaysbeenyou.mp3" type="audio/mpeg">
+</audio>
+
+  <h1>will you be my valentine? 💗</h1>
+
+  <button id="yes" onclick="alert('you just made me very happy 💞')">
+    yes
+  </button>
+
+  <button id="no" onmouseover="moveNo()">
+    no
+  </button>
+
+  <script>
+    function moveNo() {
+      const no = document.getElementById("no");
+      no.style.top = Math.random() * window.innerHeight + "px";
+      no.style.left = Math.random() * window.innerWidth + "px";
+    }
+  </script>
+
+</body>
+</html>
